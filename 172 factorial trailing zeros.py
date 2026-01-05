@@ -6,7 +6,7 @@ Input: n = 3
 Output: 0
 Explanation: 3! = 6, no trailing zero.
 """
-#solution:
+#solution: for every number n divisible by 5, there are minimum 2 even numbers n-1, n-3 so counting 5 is enough for counting 10, when trying to count both 5 and 2 received TLE.
 class Solution:
     def trailingZeroes(self, n: int) -> int:
         hashmap5 = {0:0}
